@@ -19,12 +19,13 @@ public class ReadFileSize {
 			String str;	
 			int charCounter = 0;
 			int lineCounter = 0;
-			
+			//use readLine mathod to count row number
 			while((str = br.readLine())!= null) {
 				lineCounter++;
+				//use length to count character number
 				charCounter += str.length();
 			}
-			
+			//file.length can return the file size	
 			System.out.printf("Sample.txt檔案共有%d個位元組，%d個字元，%d列資料", file.length(), charCounter, lineCounter );
 			br.close();
 			fr.close();

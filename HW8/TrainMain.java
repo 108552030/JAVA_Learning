@@ -25,6 +25,7 @@ public class TrainMain {
 		Collections.sort(list);
 		
 		//classic for loop
+		System.out.println("==============印出大到小排序的班次==============");
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
@@ -44,6 +45,7 @@ public class TrainMain {
 		System.out.println();
 		
 		
+		System.out.println("==============印出班次不重複==============");
 		//Not repeating set
 		Set<Train> set1 = new HashSet<Train>(list);
 		
@@ -60,6 +62,7 @@ public class TrainMain {
 		}
 		System.out.println();
 		
+		System.out.println("==============印出班次不重複且大到小排列==============");
 		//Sorted set , use treeSet
 		Set<Train> set2 = new TreeSet<Train>(list);
 		

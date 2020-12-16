@@ -11,8 +11,8 @@ public class HW9_1 {
 		Thread t2 = new Thread(player2);
 		System.out.println("-----大胃王快食比賽開始!-----");
 		//start the thread
-		t1.start();
 		t2.start();
+		t1.start();
 		
 		//make sure main wait the two thread 
 		try{

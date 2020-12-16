@@ -43,15 +43,19 @@ public class HW8_1 {
 		}
 		System.out.println("\n");
 		
-		//delete numeric object from Back to front avoid some element didn't catch
+		/*	delete numeric object from Back to front avoid some element didn't catch
+		 *	When remove, the array size will change, if from 0 to size() will skip 
+		 *	some value
+		 */
 		for(int i = array.size()-1; i >= 0 ; i--){
 			if(array.get(i) instanceof Number) {
 				array.remove(i);
 			}
 		}
-		//display
+		System.out.println("\n==============================Delete Number============================");
+		//display answer 
 		for(Object obj : array ) {
-			System.out.print(obj + " ");
+			System.out.printf("%s ", obj.toString());
 		}
 	}
 }
